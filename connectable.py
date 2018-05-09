@@ -1,12 +1,9 @@
 import random
 
 def noticeSomething():
-    notices=["Did you change that on your appearance?",
-            "why on this time?",
+    notices=["why now?",
             "why here?",
-            "why are you doing this?",
-            "what are you doing?",
-            "why this object?"]
+            "why this?"]
     return random.choice(notices)
 
 def greeting():
@@ -25,5 +22,6 @@ def greeting():
 
 def shareSomething():
     #story should have at least action and reaction
+    pass
 
 greeting()
