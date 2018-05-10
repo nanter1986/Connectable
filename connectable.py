@@ -22,6 +22,15 @@ def greeting():
 
 def shareSomething():
     #story should have at least action and reaction
-    pass
+    options=["when","where","how"]
+    choice=random.choice(options)
+    x=["activity","need","work","hobby"]
+    randomX=random.choice(x)
+    reaction=["pleasure","dislike","surprise","sadness"]
+    randomReaction=random.choice(reaction)
+    print("i did "+randomX+" and someone reacted with "+randomReaction)
+    print(choice+" do you do "+randomX+"?")
 
 greeting()
+shareSomething()
+
