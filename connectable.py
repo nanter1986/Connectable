@@ -1,5 +1,35 @@
 import random
 
+def blamedFor():
+    print("Are you being blamed?")
+    choice=input("choose\n1.yes\n2.no")
+    if choice=="1":
+        blameSolution()
+    elif choice=="2":
+        greeting()
+    else:
+        print("incorrect input")
+        blamedFor()
+
+def blameSoft():
+    options=["how","when","where"]
+    choice=random.choice(options)
+    print(choice+" should I do it")
+
+def blameHard():
+    pass
+
+def blameSolution():
+    print("how strongly are you being blamed?")
+    choice=input("1.hard\n2.soft")
+    if choice=="1":
+        blameSoft()
+    elif choice=="2":
+        blameHard()
+    else:
+        print("incorrect input")
+        blameSolution()
+
 def noticeSomething():
     notices=["why now?",
             "why here?",
