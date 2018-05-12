@@ -17,15 +17,18 @@ def blameSoft():
     print(choice+" should I do it")
 
 def blameHard():
-    pass
+    options=["how","when","where"]
+    choice=random.choice(options)
+    print("Im sorry this happened.I accept my mistake and respondibilities")
+    print(choice+" should I do it?")
 
 def blameSolution():
     print("how strongly are you being blamed?")
     choice=input("1.hard\n2.soft")
     if choice=="1":
-        blameSoft()
-    elif choice=="2":
         blameHard()
+    elif choice=="2":
+        blameSoft()
     else:
         print("incorrect input")
         blameSolution()
@@ -61,6 +64,6 @@ def shareSomething():
     print("i did "+randomX+" and someone reacted with "+randomReaction)
     print(choice+" do you do "+randomX+"?")
 
-greeting()
+blamedFor()
 shareSomething()
 
