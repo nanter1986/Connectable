@@ -15,12 +15,14 @@ def blameSoft():
     options=["how","when","where"]
     choice=random.choice(options)
     print(choice+" should I do it")
+    greeting()
 
 def blameHard():
     options=["how","when","where"]
     choice=random.choice(options)
     print("Im sorry this happened.I accept my mistake and respondibilities")
     print(choice+" should I do it?")
+    greeting()
 
 def blameSolution():
     print("how strongly are you being blamed?")
@@ -65,5 +67,6 @@ def shareSomething():
     print(choice+" do you do "+randomX+"?")
 
 blamedFor()
+greeting()
 shareSomething()
 
