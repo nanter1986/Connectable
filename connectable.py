@@ -1,6 +1,7 @@
 import random
 
 def blamedFor():
+    print("blamedFor################")
     print("Are you being blamed?")
     choice=input("choose\n1.yes\n2.no")
     if choice=="1":
@@ -12,12 +13,14 @@ def blamedFor():
         blamedFor()
 
 def blameSoft():
+    print("blameSoft################")
     options=["how","when","where"]
     choice=random.choice(options)
     print(choice+" should I do it")
     greeting()
 
 def blameHard():
+    print("blameHard################")
     options=["how","when","where"]
     choice=random.choice(options)
     print("Im sorry this happened.I accept my mistake and respondibilities")
@@ -25,6 +28,7 @@ def blameHard():
     greeting()
 
 def blameSolution():
+    print("blameSolution################")
     print("how strongly are you being blamed?")
     choice=input("1.hard\n2.soft")
     if choice=="1":
@@ -36,12 +40,14 @@ def blameSolution():
         blameSolution()
 
 def noticeSomething():
+    print("noticeSomething################")
     notices=["why now?",
             "why here?",
             "why this?"]
     return random.choice(notices)
 
 def greeting():
+    print("greeting################")
     print(noticeSomething())
     print("1.like\n2.have to\n3.nothing better")
     choice=input("Choose please")
@@ -56,6 +62,7 @@ def greeting():
         greeting()
 
 def shareSomething():
+    print("shareSomething################")
     #story should have at least action and reaction
     options=["when","where","how"]
     choice=random.choice(options)
