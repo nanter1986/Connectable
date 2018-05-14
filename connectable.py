@@ -43,7 +43,8 @@ def noticeSomething():
     print("noticeSomething################")
     notices=["why now?",
             "why here?",
-            "why this?"]
+            "why this?",
+            "what does it look like?what if this was true?"]
     return random.choice(notices)
 
 def greeting():
