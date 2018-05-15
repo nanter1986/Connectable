@@ -74,7 +74,56 @@ def shareSomething():
     print("i did "+randomX+" and someone reacted with "+randomReaction)
     print(choice+" do you do "+randomX+"?")
 
-blamedFor()
-greeting()
-shareSomething()
+def getSubject():
+    subject=input('''choose subject''')
+    return subject
 
+def getLikeFeeling():
+    likeFelling="ok"
+    liking=input('''
+                 1.hate
+                 2.dislike
+                 3.ok
+                 4.like
+                 5.love
+                 ''')
+    if liking=="1":
+        likeFelling="hated"
+    elif liking=="2":
+        likeFelling="disliked"
+    elif liking=="4":
+        likeFelling="liked"
+    elif liking=="5":
+        likeFelling="loved"
+    else:
+        print("incorrect input")
+        getLikeFeeling()
+    return likeFelling
+
+def getWho():
+    who=input('''who?
+              ''')
+def getTheTime():
+    time=input('''choose time
+               1.past
+               2.future
+               ''')
+    if time=="1" or time=="2":
+        pass
+    else:
+        print("incorrect input,try again")
+        getTheTime()
+
+def reactionMethodTAsk():
+    subject=getSubject()
+    likeFeeling=getLikeFeeling()
+    who=getWho()
+    time=getTheTime()
+    if time=="1":
+        print(who+" "+likeFelling+" "+subject)
+        print("how do you feel about "+subject+"?")
+    elif time="2":
+        print(who+" will probably "+likeFelling+" "+subject)
+        print("how do you feel about "+subject+"?")
+
+reactionMethodToAsk()
