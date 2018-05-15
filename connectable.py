@@ -103,6 +103,7 @@ def getLikeFeeling():
 def getWho():
     who=input('''who?
               ''')
+    return who
 def getTheTime():
     time=input('''choose time
                1.past
@@ -113,8 +114,9 @@ def getTheTime():
     else:
         print("incorrect input,try again")
         getTheTime()
+    return time
 
-def reactionMethodTAsk():
+def reactionMethodToAsk():
     subject=getSubject()
     likeFeeling=getLikeFeeling()
     who=getWho()
@@ -122,8 +124,8 @@ def reactionMethodTAsk():
     if time=="1":
         print(who+" "+likeFelling+" "+subject)
         print("how do you feel about "+subject+"?")
-    elif time="2":
-        print(who+" will probably "+likeFelling+" "+subject)
+    elif time=="2":
+        print(who+" will probably "+likeFeeling+" "+subject)
         print("how do you feel about "+subject+"?")
 
 reactionMethodToAsk()
