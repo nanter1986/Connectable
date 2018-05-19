@@ -56,4 +56,28 @@ def reactionMethodToAsk():
         print("{} will probably {} {}".format(who,likeFeeling,subject))
         print("how do you feel about {}?".format(subject))
 
-reactionMethodToAsk()
+def noticeGreeting():
+    print("what positive did you notice?\n")
+    observation=input("enter positive observation")
+    opposite=input("enter opposite of observation")
+    joke=input("0.serious\n1.joke")
+    if joke=="1":
+        print("you are excellent at {}".format(opposite))
+    else:
+       print("you are good at {}".format(observation)) 
+
+def startOptions():
+    print("what do you want to do?")
+    print('''1.discuss subject
+        2.greeting with notice
+    ''')
+    choice=input("please choose\n")
+    if choice=="1":
+        reactionMethodToAsk()
+    elif choice=="2":
+        noticeGreeting()
+    else:
+        print("incorrect input")
+        startOptions()
+
+startOptions()
